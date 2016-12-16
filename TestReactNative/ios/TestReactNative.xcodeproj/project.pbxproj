@@ -25,6 +25,10 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		F58C75701E045E3500E89FD0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58C756F1E045E3500E89FD0 /* HomeViewController.swift */; };
+		F5A865C81E046D7F0003F845 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A865C71E046D7F0003F845 /* TabBarController.swift */; };
+		F5A865DD1E046DF00003F845 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A865DC1E046DF00003F845 /* NavController.swift */; };
+		F5A865DF1E046E940003F845 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A865DE1E046E940003F845 /* UIColor+Extension.swift */; };
+		F5A865E71E0474510003F845 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A865E61E0474510003F845 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +199,10 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		F58C756E1E045E3500E89FD0 /* TestReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		F58C756F1E045E3500E89FD0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F5A865C71E046D7F0003F845 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F5A865DC1E046DF00003F845 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		F5A865DE1E046E940003F845 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F5A865E61E0474510003F845 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,15 +315,18 @@
 		13B07FAE1A68108700A75B9A /* TestReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				F5A865E21E046F5B0003F845 /* Home */,
+				F5A865E41E0470B60003F845 /* User */,
+				F5A865E11E046F3D0003F845 /* Extension */,
+				F5A865E01E046F170003F845 /* BaseController */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				F58C756E1E045E3500E89FD0 /* TestReactNative-Bridging-Header.h */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
-				F58C756F1E045E3500E89FD0 /* HomeViewController.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				F58C756E1E045E3500E89FD0 /* TestReactNative-Bridging-Header.h */,
 			);
 			name = TestReactNative;
 			sourceTree = "<group>";
@@ -395,6 +406,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F5A865E01E046F170003F845 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				F5A865DC1E046DF00003F845 /* NavController.swift */,
+				F5A865C71E046D7F0003F845 /* TabBarController.swift */,
+			);
+			name = BaseController;
+			sourceTree = "<group>";
+		};
+		F5A865E11E046F3D0003F845 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5A865DE1E046E940003F845 /* UIColor+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		F5A865E21E046F5B0003F845 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F5A865E31E046F6B0003F845 /* Controller */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		F5A865E31E046F6B0003F845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F58C756F1E045E3500E89FD0 /* HomeViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F5A865E41E0470B60003F845 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F5A865E51E0470BE0003F845 /* Controller */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		F5A865E51E0470BE0003F845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5A865E61E0474510003F845 /* UserViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -441,7 +501,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = RamboLu;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -702,7 +762,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A865E71E0474510003F845 /* UserViewController.swift in Sources */,
+				F5A865C81E046D7F0003F845 /* TabBarController.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				F5A865DD1E046DF00003F845 /* NavController.swift in Sources */,
+				F5A865DF1E046E940003F845 /* UIColor+Extension.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				F58C75701E045E3500E89FD0 /* HomeViewController.swift in Sources */,
 			);

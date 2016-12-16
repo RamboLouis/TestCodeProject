@@ -17,17 +17,14 @@ export default class TestReactNative extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+         测试测试测试
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+          测试代码。这样写好吗？
         </Text>
         <Text style={styles.instructions}>
-          测试代码。
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Cmd+R刷新{'\n'}
+          Cmd+D或震动调出开发菜单
         </Text>
       </View>
     );
@@ -47,7 +44,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   instructions: {
-    textAlign: 'center',
+    textAlign: 'left',
     color: '#333333',
     marginBottom: 5,
   },

@@ -17,9 +17,10 @@
 {
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   
-  HomeViewController *homeViewController = [HomeViewController new];
-  homeViewController.launchOptions = launchOptions;
-  self.window.rootViewController = homeViewController;
+//  HomeViewController *homeViewController = [HomeViewController new];
+//  homeViewController.launchOptions = launchOptions;
+  TabBarController *tableViewController = [TabBarController new];
+  self.window.rootViewController = tableViewController;
   [self.window makeKeyAndVisible];
   return YES;
 }
