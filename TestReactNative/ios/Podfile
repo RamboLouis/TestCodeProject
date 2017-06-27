@@ -1,0 +1,11 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'TestReactNative' do
+
+  pod 'SnapKit'#, '~> 3.0.2'
+  pod 'SwiftyJSON'#, :git => 'https://github.com/acegreen/SwiftyJSON.git', :branch => 'swift3'
+  pod 'Alamofire'#,'~> 4.2.0'
+  pod 'Kingfisher'#,'~> 3.2.1'
+
+end

@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
                                         moduleName: "TestReactNative",
                                         initialProperties: nil,
                                         launchOptions: nil)
-        homeView?.backgroundColor = UIColor.init(red: 1.0, green: 1.0, blue: 1.0, alpha: 1)
+        homeView?.backgroundColor = UIColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1)
         view = homeView
   }
 }
