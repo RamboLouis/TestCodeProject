@@ -10,9 +10,9 @@ import {
 export default class TestReactNativeProject extends Component {
   render() {
     return (
-      <Provider store={this.store}>
+      // <Provider store={this.store}>
       <App />
-      </Provider>
+      // </Provider>
     );
   }
 }
