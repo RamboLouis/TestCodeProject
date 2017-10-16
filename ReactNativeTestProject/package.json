@@ -24,5 +24,17 @@
 	},
 	"jest": {
 		"preset": "react-native"
-	}
+	},
+	"standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/__tests__/",
+      "/src/tpl/",
+      "/scripts/"
+    ],
+    "globals": [
+      "__DEV__",
+      "fetch"
+    ]
+  }
 }

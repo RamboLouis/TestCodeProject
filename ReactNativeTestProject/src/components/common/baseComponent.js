@@ -1,8 +1,8 @@
 import { Component } from 'react'
 
 class BaseComponent extends Component {
-  constructor (props) {
-    super(props)
+  constructor () {
+    super()
     this.displayName = 'BaseComponent'
   }
   render () {

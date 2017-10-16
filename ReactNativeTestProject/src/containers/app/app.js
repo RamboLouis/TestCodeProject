@@ -1,20 +1,11 @@
 import React from 'react'
 import BaseComponent from '../../components/common/baseComponent'
-import { StackNavigator, addNavigationHelpers } from 'react-navigation'
+import { StackNavigator } from 'react-navigation'
 
-import Home from '../../containers/home/home'
+import PageRoute from '../../constants/pageRoute'
 
 const AppNavigator = StackNavigator({
-  Home: {
-    screen: Home
-  }
-  //   UserCenter: {
-  //     screen: UserCenter
-  // },
-  // UserInfo: {
-  //   screen: UserInfo,
-  // },
-    // ...PageRoute
+  ...PageRoute
 })
 
 class App extends BaseComponent {
