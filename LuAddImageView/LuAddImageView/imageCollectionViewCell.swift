@@ -22,7 +22,7 @@ class imageCollectionViewCell: UICollectionViewCell {
     
     var image: UIImage? {
         didSet {
-            /** 如果没有图像，隐藏删除按钮 */
+            // 如果没有图像，隐藏删除按钮
             removeButton.isHidden = (image == nil)
             
             if image == nil {
